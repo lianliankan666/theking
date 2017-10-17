@@ -1,0 +1,39 @@
+#footer{
+	height:110px;
+	background:#0F1010;
+	clear:both;
+	line-height:110px;
+	width:1142px;
+}
+#footerLogo{
+	width:80px;
+	height:80px;
+	line-height:80px;
+}
+#footerLogo:hover{
+	text-decoration:none;
+}
+#footerLogo>img{
+	width:80px;
+	height:80px;
+	display:inline-block;
+}
+#footerLogo>p{
+	display:inline-block;
+	font-size:18px;
+}
+#footer-list{
+	list-style:none;
+	line-height:25px;
+}
+#footer-list>li:nth-of-type(1){
+	margin-top:5px;
+}
+#footer>.col-md-7{
+	height:110px;
+	line-height:10px;
+	text-align:center;
+}
+#footer>.col-md-7>p:nth-of-type(1){
+	margin-top:45px;
+}

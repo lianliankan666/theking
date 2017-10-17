@@ -1,0 +1,187 @@
+		*{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+
+		body{
+			background: #323740;
+		}
+		.mu{
+			width: 1170px;
+			height: 918px;
+			background: #1A1C22;
+			// background:red;
+			margin:0 auto;
+		}
+		.mu-left{
+			width: 318px;
+			height: 855px;
+			float: left;
+
+		}
+		
+		.mu-tou{
+			width: 318px;
+			height: 324px;
+		}
+		.mu-tou img{
+			width: 100%;
+			height: 100%;
+		}
+		.mu-xuan{
+			width: 318px;
+			height: 510px;
+			background: #2A2D36;
+			margin-top: 20px;
+		}
+		.mu-xuan ul li{
+			color: white;
+			font-size: 13px;
+			line-height: 21px;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			padding-left: 85px;
+			cursor:pointer;
+		}
+		.mu-xuan ul li.active{
+			color: #1252AF;
+		}
+		.mu-xuan ul li img{
+			display: block;
+			float: left;
+		}
+		.mu-xuantu{
+			width: 26px;
+			height: 21px;
+			float: left;
+		}
+		.kong{
+			width: 100%;
+			height: 45px;
+		}
+		.mu-right-wdkc{
+			width: 830px;
+			height: 918px;
+			float: right;
+		}
+		.mu-right-xuan{
+			width: 830px;
+			height: 72px;
+			background: #2A2D36;
+			float: right;
+			cursor:pointer;
+
+		}
+		.mu-right-xuan .active{
+			color: #1252AF;
+		}
+		.mu-xxjd{
+			color: white;
+			float: left;
+			font-size: 15px;
+			line-height: 72px;
+			font-weight: 800;
+			padding:0 35px 0 70px;
+			
+		}
+		.mu-kc{
+			color: white;
+			float: left;
+			font-size: 15px;
+			line-height: 72px;
+			font-weight: 800;
+			padding:0 35px 0 35px;
+
+		}
+		.mu-xxjd1{
+			float: right;
+		}
+
+		.mu-xxjd1>img{
+
+			width:100%;
+		}
+		.mu-kc1{
+			float: right;
+			display: none;
+		}
+		.mu-kc1>img{
+			width: 100%;
+		}
+		.mu-right-wdgz{
+			width: 800px;
+			height: 918px;
+			float: right;
+			display: none;
+		}
+		.mu-right-xuan1{
+			width: 800px;
+			height: 72px;
+			background: #2A2D36;
+			float: right;
+
+		}
+		.mu-dt{
+			color: white;
+			padding:0px 50px 0 60px;
+			line-height: 72px;
+			font-weight: 800;
+			font-size: 15px;
+			float: left;
+		}
+		.mu-gzdr{
+			color: white;
+			padding:0px 50px 0 50px;
+			line-height: 72px;
+			font-weight: 800;
+			font-size: 15px;
+			float: left;
+		}
+		.mu-fs{
+			color: white;
+			padding:0px 50px 0 50px;
+			line-height: 72px;
+			float: left;
+			font-weight: 800;
+			font-size: 15px;
+		}
+		.mu-right-xuan1 .active{
+
+			color: #1252AF;
+		}
+		.mu-gzdr1{
+			float: right;
+			width: 800px;
+		}
+		.mu-gzdr1>img{
+			width: 100%;
+		}
+		.mu-fs1{
+			width: 800px;
+			float: right;
+			display: none;
+		}
+		.mu-fs1>img{
+			width: 100%;
+		}
+		.mu-right-lsjl{
+			width: 852px;
+			height: 918px;
+			float: right;
+			display: none;
+		}
+		.mu-right-lsjl>img{
+			width: 100%;
+
+		}
+		.mu-right-wdsc{
+			width: 852px;
+			height: 918px;
+			float: right;
+			display: none;
+		}
+		.mu-right-wdsc>img{
+			width: 100%;
+			
+		}

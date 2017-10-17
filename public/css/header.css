@@ -1,0 +1,133 @@
+body{
+	min-width:1142px;
+	background:#1F232A;
+}
+#dingbu{
+	height:90px;
+	line-height:90px;
+	font-size:18px;
+	width:1142px;
+}
+#dingbu-logo>a{
+	text-decoration:none;
+}
+#dingbu-logo>a>img{
+	width:65px;
+	display:inline-block;
+}
+#dingbu-logo>a>p{
+	display:inline-block;
+	margin-left:15px;
+	color:#fff;
+}
+#dingbu-logo>a>p:hover{
+	color:#0e57c2;
+}
+.dinglu-right{
+	display:inline-block;
+	padding:0 10px;
+	height:30px;
+	border:1px solid #050506;
+	line-height:30px;
+	color:#fff;
+}
+.dinglu-right:hover{
+	text-decoration:none;
+}
+.dinglu-right-xiazai{
+	width:115px;
+	text-align:center;
+	margin-left:65%;
+	margin-right:25px;
+	background:#0e57c2;
+}
+.dinglu-right-denglu{
+	color:#ccc;
+	font-size:16px;
+}
+
+
+#nav-wrap{
+	padding:0;
+	width:1142px;
+}
+
+#navList{
+	height:45px;
+	line-height:45px;
+}
+#navList>li:nth-of-type(1){
+	margin-left:50px;
+}
+#navList>li+li{
+	margin-left:75px;
+}
+#navList>.navActive>a{
+	color:#0e57c2;
+}
+#navList>li>a{
+	font-size:18px;
+	color:#fff;
+}
+.navbar-default{
+	width:100%;
+}
+
+
+
+.navbar-default>div>#navshousuo{
+	margin-right:45px;
+}
+.navbar-default>div>#navshousuo>.form-group>.form-control{
+	width:250px;
+	height:30px;
+	border:1px solid #3D4452;
+	background-color:#21242B;
+}
+.navbar-default>div>#navshousuo>.form-group{
+	position:relative;
+}
+.fontwrap{
+	position:absolute;
+	top:0;
+	right:0;
+	float:none;
+	display:inline-block;
+	width:30px;
+	height:30px;
+	background:#3D4452;
+	border:1px solid #3D4452;
+	text-align:center;
+
+}
+.fontwrap>span{
+	font-size:20px;
+	margin-top:3px;
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+	background-color:#0E0E10;
+	/*color:#0E57C2;*/
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover
+.dropdown-menu{
+	background-color:#0E0E10;
+	/*color:#0E57C2;*/
+}
+#nav-wrap .navbar-default .navbar-nav>.active>a{
+	color:#0E57C2;
+}
+
+#navList>li>a:focus{
+	color:#0E57C2;
+}
+.dropdown-menu>li>a{
+	color:#ccc;
+	background:#0E0E10;
+}
+.dropdown-menu>li{
+	background:#0E0E10;
+}
+.dropdown-menu{
+	background:#0E0E10;
+}

@@ -1,0 +1,74 @@
+#course-wrap{
+	margin-bottom:466px;
+}
+.course-list{
+	margin-bottom:200px;
+}
+.duihuakuang{
+	position:relative;
+}
+.duihuakuang>div{
+	position:absolute;
+	top:45px;
+	left:85px;
+	color:#fff;
+	font-size:24px;
+}
+#like-imgs{
+	margin-top:50px;
+	margin-bottom:92px;
+}
+#like-imgs>img{
+	float:right;
+
+}
+
+.form-group+.form-group{
+	margin-top:40px;
+	clear:both;
+}
+.title{
+	display:block;
+	margin-left:15px;
+	color:#ccc;
+}
+
+.form-group label{
+	color:#ccc;
+}
+.radio{
+	margin-top:35px;
+	position:relative;
+}
+.radio+.radio{
+	margin-top:35px;
+}
+.checkbox{
+	margin-top:35px;
+	position:relative;
+}
+.checkbox+.checkbox{
+	margin-top:35px;
+}
+.radio>label>.xuanzhong{
+	width:18px;
+	height:18px;
+	background:#8E9092;
+	opacity:1;
+	position:absolute;
+	top:0;
+	left:0;
+}
+.radio>label>input{
+	background:#8E9092;
+}
+.shaixuan-dibu{
+	margin-top:70px;
+	margin-bottom:90px;
+}
+.shaixuan-dibu a{
+	width:160px;
+	height:50px;
+	line-height:36px;
+	font-size:18px;
+}

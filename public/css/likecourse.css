@@ -1,0 +1,38 @@
+#course-wrap{
+	margin-bottom:466px;
+}
+.course-list{
+	margin-bottom:200px;
+}
+.duihuakuang{
+	position:relative;
+}
+.duihuakuang>div{
+	position:absolute;
+	top:45px;
+	left:85px;
+	color:#fff;
+	font-size:24px;
+}
+#like-imgs{
+	margin-top:50px;
+	margin-bottom:92px;
+}
+#like-imgs>img{
+	float:right;
+}
+.course{
+	position:relative;
+	margin-top:40px;
+}
+.course>#xuanzhe{
+	display:block;
+	width:26px;
+	height:26px;
+	position:absolute;
+	top:10px;
+	right:40px;
+}
+.course>#xuanzhe>img{
+	width:100%;
+}

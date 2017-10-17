@@ -1,0 +1,926 @@
+<% include layouts/header %>
+<link rel="stylesheet" href="/css/homepage.css">
+
+<div class="container">
+		<!-- 头部开始 -->
+		<ul class="list-unstyled header">
+			<li class="col-md-4">
+				<div class="integral">
+					<div class="integral-top">
+						<i>
+							<img src="./imgs/ljifen.png" alt="">
+						</i>
+						<span style="margin-left:19px"><%= user.jifen %> 积分</span>
+					</div>
+					<div class="integral-bottom">
+						<i>
+							<img src="./imgs/lmingpian.png" alt="">
+						</i>
+						<span>个人名片</span>
+					</div>
+
+				</div>
+			</li>
+			<li class="col-md-4 head-cter" style="display:block;text-align:center;">
+				<img  class="img-circle center-block touxiang" src="./imgs/Rectangle 9.png" alt="">
+				<p><%= user.uname %></p>
+				<span style="margin-top:14px;color:#fff;"><%= user.qianming %></span>
+			</li>
+			<li class="col-md-4">
+				<ul class="list-unstyled head-rg">
+					<li class="col-sm-4">
+						<span><%= user.zuopin %></span>
+						<span class="">作品</span>
+					</li>
+					<li class="col-sm-4">
+						<span><%= user.fensi %></span>
+						<span>粉丝</span>
+					</li>
+					<li class="col-sm-4">
+						<span><%= user.guanzhu %></span>
+						<span>关注</span>
+					</li>
+				</ul>
+				<div class="guanzhu">
+					<img src="./imgs/gz.png" alt=""></img>
+					<b style="margin-right:7px;">点击关注</b>
+				</div>
+			</li>
+		</ul>
+		<!-- 头部结束 -->
+
+		<!-- body选项卡开始 -->
+		<div class="xuanxiang">
+			<ul class="nav nav-tabs body-xuanx">
+				<li class="col-sm-3 active">
+					<a data-toggle="tab" href="#index" class="zpage">主页</a>
+				</li>
+				<li class="col-sm-3">
+					<a data-toggle="tab" href="#jieda" class="page">解答</a>
+				</li>
+				<li class="col-sm-3">
+					<a data-toggle="tab" href="#zhibo" class="page">直播</a>
+				</li>
+				<li class="col-sm-3">
+					<a data-toggle="tab" href="#wenzhang" class="page">文章</a>
+				</li>
+			</ul>
+
+			<!-- 呈现选项卡中的内容开始 -->
+			<div class="tab-content body-content">
+				<!-- 选项卡主页开始 -->
+				<div class="tab-pane fade in active" id="index">
+					<div class="row row1">
+						<div class="col-md-3 body-list">
+							<a href="javascript:">
+								<div class="thumbnail body-img" style="border:0;background:none;padding:0;">
+									<img src="./imgs/Rectangle 13.png" alt="">
+									<div class="caption body-cap" style="padding:0">
+										<h6 style="margin-left:5px;">海报排版</h6>
+										<ul class="list-unstyled body-tit">
+											<li class="col-sm-4 body-t-title">
+												<span>预览</span>
+												<span class="">1456</span>
+											</li>
+											<li class="col-sm-4">
+												<span>回答</span>
+												<span>666</span>
+											</li>
+											<li class="col-sm-4">
+												<span>点赞</span>
+												<span>1260</span>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</a>	
+						</div>
+						<div class="col-md-3 body-list">
+							<a href="javascript:">
+								<div class="thumbnail body-img" style="border:0;background:none;padding:0">
+									<img src="./imgs/Rectangle 13 Copy 2.png" alt="">
+									<div class="caption body-cap" style="padding:0">
+										<h6>图标的制作</h6>
+										<ul class="list-unstyled body-tit">
+											<li class="col-sm-4">
+												<span>预览</span>
+												<span class="">1456</span>
+											</li>
+											<li class="col-sm-4">
+												<span>回答</span>
+												<span>866</span>
+											</li>
+											<li class="col-sm-4">
+												<span>点赞</span>
+												<span>698</span>
+											</li>
+										</ul>
+									</div>
+								</div>	
+							</a>
+						</div>
+						<div class="col-md-3 body-list">
+							<a href="javascript:">
+								<div class="thumbnail body-img" style="border:0;background:none;padding:0">
+									<img src="./imgs/2.png" alt="">
+									<div class="caption body-cap" style="padding:0">
+										<h6>VI手册规范</h6>
+										<ul class="list-unstyled body-tit">
+											<li class="col-sm-4">
+												<span>预览</span>
+												<span class="">1456</span>
+											</li>
+											<li class="col-sm-4">
+												<span>回答</span>
+												<span>866</span>
+											</li>
+											<li class="col-sm-4">
+												<span>点赞</span>
+												<span>698</span>
+											</li>
+										</ul>
+									</div>
+								</div>	
+							</a>
+						</div>
+						<div class="col-md-3 body-list">
+							<a href="javascript:">
+								<div class="thumbnail body-img" style="border:0;background:none;padding:0">
+									<img src="./imgs/Rectangle 13 Copy.png" alt="">
+									<div class="caption body-cap" style="padding:0">
+										<h6>蒙版的使用</h6>
+										<ul class="list-unstyled body-tit">
+											<li class="col-sm-4">
+												<span>预览</span>
+												<span class="">1456</span>
+											</li>
+											<li class="col-sm-4">
+												<span>回答</span>
+												<span>866</span>
+											</li>
+											<li class="col-sm-4">
+												<span>点赞</span>
+												<span>698</span>
+											</li>
+										</ul>
+									</div>
+								</div>	
+							</a>
+						</div>
+					</div>
+
+					<div class="row row1" style="margin-top:40px;">
+						<a href="javascript:">
+							<div class="col-md-3 body-list">
+								<div class="thumbnail body-img" style="border:0;background:none;padding:0;">
+									<img src="./imgs/2.png" alt="">
+									<div class="caption body-cap" style="padding:0">
+										<h6 style="margin-left:5px;">AI插画</h6>
+										<ul class="list-unstyled body-tit">
+											<li class="col-sm-4 body-t-title">
+												<span>预览</span>
+												<span class="">1456</span>
+											</li>
+											<li class="col-sm-4">
+												<span>回答</span>
+												<span>666</span>
+											</li>
+											<li class="col-sm-4">
+												<span>点赞</span>
+												<span>1260</span>
+											</li>
+										</ul>
+									</div>
+								</div>	
+							</div>
+						</a>
+						<div class="col-md-3 body-list">
+							<a href="#">
+								<div class="thumbnail body-img" style="border:0;background:none;padding:0">
+									<img src="./imgs/13.png" alt="">
+									<div class="caption body-cap" style="padding:0">
+										<h6>图标设计</h6>
+										<ul class="list-unstyled body-tit">
+											<li class="col-sm-4">
+												<span>预览</span>
+												<span class="">1456</span>
+											</li>
+											<li class="col-sm-4">
+												<span>回答</span>
+												<span>666</span>
+											</li>
+											<li class="col-sm-4">
+												<span>点赞</span>
+												<span>1260</span>
+											</li>
+										</ul>
+									</div>
+								</div>	
+							</a>
+						</div>
+						<div class="col-md-3 body-list">
+							<a href="#">
+								<div class="thumbnail body-img" style="border:0;background:none;padding:0">
+									<img src="./imgs/15.png" alt="">
+									<div class="caption body-cap" style="padding:0">
+										<h6>快速抠图</h6>
+										<ul class="list-unstyled body-tit">
+											<li class="col-sm-4">
+												<span>预览</span>
+												<span class="">1456</span>
+											</li>
+											<li class="col-sm-4">
+												<span>回答</span>
+												<span>666</span>
+											</li>
+											<li class="col-sm-4">
+												<span>点赞</span>
+												<span>1260</span>
+											</li>
+										</ul>
+									</div>
+								</div>	
+							</a>
+						</div>
+						<div class="col-md-3 body-list">
+							<a href="#">
+								<div class="thumbnail body-img" style="border:0;background:none;padding:0">
+									<img src="./imgs/12.png" alt="">
+									<div class="caption body-cap" style="padding:0">
+										<h6>海报排版</h6>
+										<ul class="list-unstyled body-tit">
+											<li class="col-sm-4">
+												<span>预览</span>
+												<span class="">1456</span>
+											</li>
+											<li class="col-sm-4">
+												<span>回答</span>
+												<span>666</span>
+											</li>
+											<li class="col-sm-4">
+												<span>点赞</span>
+												<span>1260</span>
+											</li>
+										</ul>
+									</div>
+								</div>	
+							</a>
+						</div>
+					</div>
+
+					<div class="row row1" style="margin-top:40px;">
+						<div class="col-md-3 body-list">
+							<a href="javascript:">
+								<div class="thumbnail body-img" style="border:0;background:none;padding:0;">
+									<img src="./imgs/Rectangle 13.png" alt="">
+									<div class="caption body-cap" style="padding:0">
+										<h6 style="margin-left:5px;">海报合成</h6>
+										<ul class="list-unstyled body-tit">
+											<li class="col-sm-4 body-t-title">
+												<span>预览</span>
+												<span class="">1456</span>
+											</li>
+											<li class="col-sm-4">
+												<span>回答</span>
+												<span>666</span>
+											</li>
+											<li class="col-sm-4">
+												<span>点赞</span>
+												<span>1260</span>
+											</li>
+										</ul>
+									</div>
+								</div>	
+							</a>
+						</div>
+						<div class="col-md-3 body-list">
+							<a href="#">
+								<div class="thumbnail body-img" style="border:0;background:none;padding:0">
+									<img src="./imgs/Rectangle 13 Copy 2.png" alt="">
+									<div class="caption body-cap" style="padding:0">
+										<h6>AI插画</h6>
+										<ul class="list-unstyled body-tit">
+											<li class="col-sm-4">
+												<span>预览</span>
+												<span class="">1456</span>
+											</li>
+											<li class="col-sm-4">
+												<span>回答</span>
+												<span>666</span>
+											</li>
+											<li class="col-sm-4">
+												<span>点赞</span>
+												<span>1260</span>
+											</li>
+										</ul>
+									</div>
+								</div>	
+							</a>
+						</div>
+						<div class="col-md-3 body-list">
+							<a href="#">
+								<div class="thumbnail body-img" style="border:0;background:none;padding:0">
+									<img src="./imgs/Rectangle 13 Copy 3.png" alt="">
+									<div class="caption body-cap" style="padding:0">
+										<h6>光影讲解</h6>
+										<ul class="list-unstyled body-tit">
+											<li class="col-sm-4">
+												<span>预览</span>
+												<span class="">1456</span>
+											</li>
+											<li class="col-sm-4">
+												<span>回答</span>
+												<span>666</span>
+											</li>
+											<li class="col-sm-4">
+												<span>点赞</span>
+												<span>1260</span>
+											</li>
+										</ul>
+									</div>
+								</div>	
+							</a>
+						</div>
+						<div class="col-md-3 body-list">
+							<a href="#">
+								<div class="thumbnail body-img" style="border:0;background:none;padding:0">
+									<img src="./imgs/Rectangle 13 Copy.png" alt="">
+									<div class="caption body-cap" style="padding:0">
+										<h6>AI插画</h6>
+										<ul class="list-unstyled body-tit">
+											<li class="col-sm-4">
+												<span>预览</span>
+												<span class="">1456</span>
+											</li>
+											<li class="col-sm-4">
+												<span>回答</span>
+												<span>666</span>
+											</li>
+											<li class="col-sm-4">
+												<span>点赞</span>
+												<span>1260</span>
+											</li>
+										</ul>
+									</div>
+								</div>	
+							</a>
+						</div>
+					</div>
+				</div>
+				<!-- 选项卡主页详情开始 -->
+				<div id="zyxq" id="index-big">
+					<div class="media">
+						<div class="media-left">
+						   	<a href="#">
+						      <img class="media-object" src="./imgs/Oval-big.png" alt=" " style="margin-top:16px;margin-left:21px;">
+						    </a>
+						</div>
+						<div class="media-body index-big-tit">
+						    <h4 class="media-heading" style="margin-top:16px;">mercedes-benz H5网站设计</h4>
+						    <p><span>白鱼123&nbsp;&nbsp;</span>发表于2017-09-15 19:00&nbsp;分类平面设计&nbsp;海报&nbsp;&nbsp;标签 ：&nbsp;<b>photoshop</b></p>
+						    <h5>作品版权 ：<span style="color:#DFDFE0;">白鱼123&nbsp;</span>原创，未经作者许可，禁止以任何形式转载或使用。</h5>
+						    <div class="index-big-right">
+						    	<h5>浏览：<span>666</span>
+									/ 赞：<span>28</span>
+									/ 点评：<span>9</span>
+						    	</h5>
+						    </div>
+						</div>	
+					</div>
+					<div class="index-img">
+						<h4>mercedes-benz H5网站设计</h4>
+						<img src="./imgs/zyxq.png" alt="">
+					</div>
+				</div>
+				<!-- 选项卡主页详情结束 -->
+				<!-- 选项卡主页结束 -->
+
+				<!-- 选项卡解答开始 -->
+				<div class="tab-pane fade" id="jieda">
+					<ul class="nav nav-tabs body-jieda">
+						<li class="col-md-1 active">
+							<a data-toggle="tab" href="#zuixin">最新的</a>
+						</li>
+						<li class="col-md-1">
+							<a data-toggle="tab" href="#weihuida">未回答的</a>
+						</li>
+						<li class="col-md-1" style="border:0">
+							<a data-toggle="tab" href="#zuire">最热的</a>
+						</li>
+					</ul>
+
+
+					<ul class="list-group  jieda-list" >
+					  	<li class="list-group-item"  style="background:#2B2D36;border-radius:0">
+					  		<div class="media">
+								<div class="media-left jieda-pinglun">
+								    <a href="javascript:" class="jd-huifu">
+								      66<br>回复
+								  	</a>
+								  	<a href="javascript:" class="jd-yuedu">
+								      166<br>阅读
+								  	</a>
+								</div>
+								<div class="media-body jd-pl-right" style="color:#AEAEB1">
+								   <a href="javascript:">
+								   		<h4 class="media-heading" style="color:#F5F5F5">
+								   		photoshop在修改数字时该怎么操作
+								   		<span style="margin-left:40px;">
+								    		基础理论
+									    </span>
+									    <span>
+									    	字体设计
+									    </span>
+									    <span>
+									    	字效设计
+									    </span>
+								   		</h4>
+								    嫣然一笑终成梦 发表了帖子 小裙摆 于2017-09-15 19:00回复
+								    </a>
+								</div>
+							</div>
+					  	</li>
+						<li class="list-group-item"  style="background:#2B2D36;border-radius:0">
+					  		<div class="media">
+								<div class="media-left jieda-pinglun">
+								    <a href="javascript:" class="jd-huifu">
+								      66<br>回复
+								  	</a>
+								  	<a href="javascript:" class="jd-yuedu">
+								      166<br>阅读
+								  	</a>
+								</div>
+								<div class="media-body jd-pl-right" style="color:#AEAEB1">
+									<a href="javascript:">
+									   <h4 class="media-heading" style="color:#F5F5F5">
+									   		photoshop在修改数字时该怎么操作
+									   		<span style="margin-left:40px;">
+									    		基础理论
+										    </span>
+										    <span>
+										    	字体设计
+										    </span>
+									   	</h4>
+								    嫣然一笑终成梦 发表了帖子 小裙摆 于2017-09-15 19:00回复
+								    </a>
+								    
+								</div>
+							</div>
+					  	</li>
+					  	<li class="list-group-item"  style="background:#2B2D36;border-radius:0">
+					  		<div class="media">
+								<div class="media-left jieda-pinglun">
+								    <a href="javascript:" class="jd-huifu">
+								      66<br>回复
+								  	</a>
+								  	<a href="javascript:" class="jd-yuedu">
+								      166<br>阅读
+								  	</a>
+								</div>
+								<div class="media-body jd-pl-right" style="color:#AEAEB1">
+								   <a href="javascript:">
+									   	<h4 class="media-heading" style="color:#F5F5F5">
+									   		photoshop在修改数字时该怎么操作
+									   		<span style="margin-left:40px;">
+									    		基础理论
+										    </span>
+										    <span>
+										    	字体设计
+										    </span>
+										    <span>
+										    	字效设计
+										    </span>
+									   	</h4>
+								    嫣然一笑终成梦 发表了帖子 小裙摆 于2017-09-15 19:00回复
+								    </a>
+								</div>
+							</div>
+					  	</li>
+					  	<li class="list-group-item"  style="background:#2B2D36;border-radius:0">
+					  		<div class="media">
+								<div class="media-left jieda-pinglun">
+								    <a href="javascript:" class="jd-huifu">
+								      66<br>回复
+								  	</a>
+								  	<a href="javascript:" class="jd-yuedu">
+								      166<br>阅读
+								  	</a>
+								</div>
+								<div class="media-body jd-pl-right" style="color:#AEAEB1">
+								   	<a href="javascript:">
+									   		<h4 class="media-heading" style="color:#F5F5F5">
+									   		photoshop在修改数字时该怎么操作
+									   		<span style="margin-left:40px;">
+									    		基础理论
+										    </span>
+										    <span>
+										    	字体设计
+										    </span>
+										    <span>
+										    	字效设计
+										    </span>
+									   	</h4>
+								    嫣然一笑终成梦 发表了帖子 小裙摆 于2017-09-15 19:00回复
+								    </a>
+								</div>
+							</div>
+					  	</li>
+					  	<li class="list-group-item"  style="background:#2B2D36;border-radius:0">
+					  		<div class="media">
+								<div class="media-left jieda-pinglun">
+								    <a href="javascript:" class="jd-huifu">
+								      66<br>回复
+								  	</a>
+								  	<a href="javascript:" class="jd-yuedu">
+								      166<br>阅读
+								  	</a>
+								</div>
+								<div class="media-body jd-pl-right" style="color:#AEAEB1">
+								   	<a href="javascript:">
+								   		<h4 class="media-heading" style="color:#F5F5F5">
+								   		photoshop在修改数字时该怎么操作
+									   		<span style="margin-left:40px;">
+									    		基础理论
+										    </span>
+										    <span>
+										    	字体设计
+										    </span>
+										    <span>
+										    	字效设计
+										    </span>
+									   	</h4>
+								    嫣然一笑终成梦 发表了帖子 小裙摆 于2017-09-15 19:00回复
+								    </a>
+								</div>
+							</div>
+					  	</li>
+					  	<li class="list-group-item"  style="background:#2B2D36;border-radius:0">
+					  		<div class="media">
+								<div class="media-left jieda-pinglun">
+								    <a href="javascript:" class="jd-huifu">
+								      66<br>回复
+								  	</a>
+								  	<a href="javascript:" class="jd-yuedu">
+								      166<br>阅读
+								  	</a>
+								</div>
+								<div class="media-body jd-pl-right" style="color:#AEAEB1">
+								   	<a href="javascript:">
+								   		<h4 class="media-heading" style="color:#F5F5F5">
+								   		photoshop在修改数字时该怎么操作
+									   		<span style="margin-left:40px;">
+									    		基础理论
+										    </span>
+										    <span>
+										    	字体设计
+										    </span>
+									   	</h4>
+								    嫣然一笑终成梦 发表了帖子 小裙摆 于2017-09-15 19:00回复
+								    </a>
+								</div>
+							</div>
+					  	</li>
+					  	<li class="list-group-item"  style="background:#2B2D36;border-radius:0">
+					  		<div class="media">
+								<div class="media-left jieda-pinglun">
+								    <a href="javascript:" class="jd-huifu">
+								      66<br>回复
+								  	</a>
+								  	<a href="javascript:" class="jd-yuedu">
+								      166<br>阅读
+								  	</a>
+								</div>
+								<div class="media-body jd-pl-right" style="color:#AEAEB1">
+								   	<a href="javascript:">
+								   		<h4 class="media-heading" style="color:#F5F5F5">
+								   		photoshop在修改数字时该怎么操作
+									   		<span style="margin-left:40px;">
+									    		基础理论
+										    </span>
+										    <span>
+										    	字体设计
+										    </span>
+										    <span>
+										    	字效设计
+										    </span>
+									   	</h4>
+								    嫣然一笑终成梦 发表了帖子 小裙摆 于2017-09-15 19:00回复
+								    </a>
+								</div>
+							</div>
+					  	</li>
+					  	<li class="list-group-item"  style="background:#2B2D36;border-radius:0">
+					  		<div class="media">
+								<div class="media-left jieda-pinglun">
+								    <a href="javascript:" class="jd-huifu">
+								      66<br>回复
+								  	</a>
+								  	<a href="javascript:" class="jd-yuedu">
+								      166<br>阅读
+								  	</a>
+								</div>
+								<div class="media-body jd-pl-right" style="color:#AEAEB1">
+								   	<a href="javascript:">
+								   		<h4 class="media-heading" style="color:#F5F5F5">
+								   		photoshop在修改数字时该怎么操作
+									   		<span style="margin-left:40px;">
+									    		基础理论
+										    </span>
+										    <span>
+										    	字体设计
+										    </span>
+										    <span>
+										    	字效设计
+										    </span>
+									   	</h4>
+								    嫣然一笑终成梦 发表了帖子 小裙摆 于2017-09-15 19:00回复
+								    </a>
+								</div>
+							</div>
+					  	</li>
+					</ul>
+				</div>
+
+				<!-- 选项卡解答详情开始 -->
+				<div class="jxqing">
+					<div class="jieda">
+						<div class="media jieda-big">
+							<div class="media-left">
+							   	<a href="#">
+							      <img class="media-object" src="./imgs/middle.png" alt=" " style="margin-top:16px;margin-left:21px;">
+							    </a>
+							</div>
+							<div class="media-body index-big-tit">
+							    <h4 class="media-heading" style="margin-top:16px;">
+							    	photoshop在修改数字时该怎么操作
+									<span>其他</span>	
+							    </h4>
+							    <p><span>嫣然一笑终成梦&nbsp;&nbsp;</span>发表于2017-09-15 19:00&nbsp;标签 ：&nbsp;<b>基础理论&nbsp;字体设计&nbsp;字效设计</b></p>
+							    <div class="index-big-right" id="jieda-big-right">
+							    	<h5>阅读：<span>17</span>
+										/ 回复：<span>28</span>
+							    	</h5>
+							    </div>
+							</div>	
+						</div>
+						<div class="index-jieda">
+							<div class="index-jieda-top">
+								<p>你好:</p>
+								<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我在修改表表示&nbsp;‘数字和文字怎么添加&nbsp;键盘上需要如何操作&nbsp;&nbsp;求步骤</p>
+								<h5>分享到 ：
+									<img src="./imgs/Oval 2.png" alt="">
+									<img src="./imgs/Oval 3.png" alt="">
+									<img src="./imgs/Oval 3 Copy.png" alt="">
+									<span>
+										<img src="./imgs/shoucang.png" alt="">
+										收藏
+									</span>
+								</h5>
+							</div>
+							<div class="index-jieda-bottom">
+								<img src="./imgs/Rectangle 22.png" alt="">
+								<img src="./imgs/huida.png" alt="">
+								<span>回答</span>
+							</div>
+
+							
+							
+						</div>
+					</div>
+					<div class="jieda-huida">
+						<div class="btn-group jieda-huida-top">
+							<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="syhd">
+							    所有回答 <span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu" id="drop">
+							    <li><a href="#">所有回答</a></li>
+							    <li><a href="#">老师回答</a></li>
+							    <li><a href="#">我的回答</a></li>
+							</ul>
+						</div>
+
+						<div class="media jiehd">
+						  	<div class="media-left">
+						    	<a href="#">
+						      		<img class="media-object" src="./imgs/middleo.png" alt="...">
+						      		<span>小裙摆</span>
+						    	</a>
+						 	</div>
+						  	<div class="media-body">
+						    	<h5 class="media-heading">文字或者数字都是使用ps里边的文字工具，在画面中单击之后，按键盘对应的键就可以的。输入之前如<br><br>去掉图片上原有的文本或者数字，需要使用修复组工具，比如仿制图章，污点修复画笔工具等。</h5>
+						  	</div>
+						  	<div class="media-bottom">
+						  		<div class="meidabo-left">
+							  		<img src="./imgs/Rectangle 22.png" alt="">
+							  		<img src="./imgs/zan.png" alt="">
+							  		<span> 赞 0</span>
+						  		</div>
+						  		<div class="meidabo-right">
+						  			
+							  		<img src="./imgs/Rectangle 22.png" alt="">
+							  		<span>回复</span>
+							  		<h5>
+						  				2017-09-15&nbsp;19:00:36&nbsp;只看该作者
+						  			</h5>
+						  		</div>
+						  	</div>
+						</div>
+					</div>
+				</div>
+				<!-- 选项卡解答详情结束 -->
+				<!-- 选项卡解答结束 -->
+					
+				<!-- 选项卡直播开始 -->
+				<div class="tab-pane fade" id="zhibo">
+					<ul class="nav nav-tabs body-jieda" style="border:0;border-bottom:2px solid #424751;">
+						<span style="color:#fff;float:left;margin-left:56px;margin-top:10px;">状态：</span>
+						<li class="col-md-1 active">
+							<a data-toggle="tab" href="#quanbu">全部</a>
+						</li>
+						<li class="col-md-1">
+							<a data-toggle="tab" href="#jijiangzb">即将直播</a>
+						</li>
+						<li class="col-md-1" style="border:0">
+							<a data-toggle="tab" href="#lishizb">历史直播</a>
+						</li>
+					</ul>
+
+					<div class="row" style="margin:0;">
+						<div class="col-md-4 zhibo-list">
+							<div class="thumbnail zhibo-img" >
+								<img src="./imgs/Rectangle 18.png" alt="">
+								<div class="caption zhibo-cap" style="padding:0">
+									<h4 style="margin-left:5px;">直播回放</h4>
+								</div>
+								
+							</div>	
+							<div class="zhibo-p">
+								<p>侏罗纪公园电影海报合成</p>
+								<span style="color:#B5B6B9;float:left;margin-left:5px;">2小时</span>
+								<span style="color:#B5B6B9; float:right;">4600人参与</span>
+							</div>
+						</div>
+						<div class="col-md-4 zhibo-list">
+							<div class="thumbnail zhibo-img" >
+								<img src="./imgs/Rectangle 19.png" alt="">
+								<div class="caption zhibo-cap" style="padding:0">
+									<h4 style="margin-left:5px;">直播回放</h4>
+								</div>
+								
+							</div>
+							<div class="zhibo-p">
+								<p>侏罗纪公园电影海报合成</p>
+								<span style="color:#B5B6B9;float:left;margin-left:5px;">2小时</span>
+								<span style="color:#B5B6B9; float:right;">4600人参与</span>
+							</div>
+						</div>
+						<div class="col-md-4 zhibo-list">
+							<div class="thumbnail zhibo-img" >
+								<img src="./imgs/Rectangle 18.png" alt="">
+								<div class="caption zhibo-cap" style="padding:0">
+									<h4 style="margin-left:5px;">直播回放</h4>
+								</div>
+								
+							</div>	
+							<div class="zhibo-p">
+								<p>侏罗纪公园电影海报合成</p>
+								<span style="color:#B5B6B9;float:left;margin-left:5px;">2小时</span>
+								<span style="color:#B5B6B9; float:right;">4600人参与</span>
+							</div>
+						</div>	
+					</div>
+
+					<div class="row" style="margin:0;">
+						<div class="col-md-4 zhibo-list">
+							<div class="thumbnail zhibo-img" >
+								<img src="./imgs/Rectangle 21.png" alt="">
+								<div class="caption zhibo-cap" style="padding:0">
+									<h4 style="margin-left:5px;">直播回放</h4>
+								</div>
+								
+							</div>	
+							<div class="zhibo-p">
+								<p>侏罗纪公园电影海报合成</p>
+								<span style="color:#B5B6B9;float:left;margin-left:5px;">2小时</span>
+								<span style="color:#B5B6B9; float:right;">4600人参与</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 选项卡直播结束 -->
+
+				<!-- 选项卡文章开始 -->
+				<div class="tab-pane fade" id="wenzhang">
+					<div class="media body-wz">
+						<div class="media-left">
+							<a href="#">
+								<img class="media-object" src="./imgs/wenzhang.png" alt=" " style="margin-left:30px;margin-top:31px;margin-right:17px;">
+							</a>
+						</div>
+						<div class="media-body body-wenzhang">
+							<h4 class="media-heading">			
+								版式设计中的文字层级理论
+								<span style="margin-left:40px;">
+								    版式设计
+							    </span>
+							    <span>
+							    	排版
+							    </span>
+							</h4>
+						作为一个职业的设计师，专门写帖子时间成本发现蛮大，丢下了七夕，丢下了客户的单子。在写这个帖子之前，在写这个帖子之前还是蛮感谢刘晓翔老师和瑞士乔纳斯老师，写这个帖子时候我还是有很多感悟。我把
+							<div class="wz-img">
+								<img src="./imgs/Oval.png" alt="">
+								<span>文成武 <b>发布于 7天前</b></span>
+								<ul class="liulan">
+									<li>
+										浏览&nbsp;&nbsp;<span>116</span>
+									</li>
+									<li>
+										赞&nbsp;&nbsp;<span>4</span>
+									</li>
+									<li style="border:0">
+										评论&nbsp;&nbsp;<span>0</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="media body-wz">
+						<div class="media-left">
+							<a href="#">
+								<img class="media-object" src="./imgs/wenzhang.png" alt=" " style="margin-left:30px;margin-top:31px;margin-right:17px;">
+							</a>
+						</div>
+						<div class="media-body body-wenzhang">
+							<h4 class="media-heading">			
+								版式设计中的文字层级理论
+								<span style="margin-left:40px;">
+								    版式设计
+							    </span>
+							    <span>
+							    	排版
+							    </span>
+							</h4>
+						作为一个职业的设计师，专门写帖子时间成本发现蛮大，丢下了七夕，丢下了客户的单子。在写这个帖子之前，在写这个帖子之前还是蛮感谢刘晓翔老师和瑞士乔纳斯老师，写这个帖子时候我还是有很多感悟。我把
+							<div class="wz-img">
+								<img src="./imgs/Oval.png" alt="">
+								<span>文成武 <b>发布于 7天前</b></span>
+								<ul class="liulan">
+									<li>
+										浏览&nbsp;&nbsp;<span>116</span>
+									</li>
+									<li>
+										赞&nbsp;&nbsp;<span>4</span>
+									</li>
+									<li style="border:0">
+										评论&nbsp;&nbsp;<span>0</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="media body-wz">
+						<div class="media-left">
+							<a href="#">
+								<img class="media-object" src="./imgs/wenzhang.png" alt=" " style="margin-left:30px;margin-top:31px;margin-right:17px;">
+							</a>
+						</div>
+						<div class="media-body body-wenzhang">
+							<h4 class="media-heading">			
+								版式设计中的文字层级理论
+								<span style="margin-left:40px;">
+								    版式设计
+							    </span>
+							    <span>
+							    	排版
+							    </span>
+							</h4>
+						作为一个职业的设计师，专门写帖子时间成本发现蛮大，丢下了七夕，丢下了客户的单子。在写这个帖子之前，在写这个帖子之前还是蛮感谢刘晓翔老师和瑞士乔纳斯老师，写这个帖子时候我还是有很多感悟。我把
+							<div class="wz-img">
+								<img src="./imgs/Oval.png" alt="">
+								<span>文成武 <b>发布于 7天前</b></span>
+								<ul class="liulan">
+									<li>
+										浏览&nbsp;&nbsp;<span>116</span>
+									</li>
+									<li>
+										赞&nbsp;&nbsp;<span>4</span>
+									</li>
+									<li style="border:0">
+										评论&nbsp;&nbsp;<span>0</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 选项卡文章结束 -->
+			</div>
+			<!-- 呈现选项卡中的内容结束 -->
+
+			<!-- 底部按钮开始 查看更多 -->
+			<a class="btn btn-primary col-md-offset-5" href="/create/fabu" style="margin-top:123px;">发布文章</a>
+			<!-- 底部按钮结束 查看更多 -->
+		</div>
+<% include layouts/footer %>
+<script src="/js/homepage.js"></script>

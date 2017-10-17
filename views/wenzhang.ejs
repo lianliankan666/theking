@@ -1,0 +1,87 @@
+<% include layouts/header %>
+<!-- 引入CSS -->
+<link rel="stylesheet" href="/css/wenzhang.css">
+<!-- 定义外部容器 -->
+<div id="wenzhang" class="container">
+	<!-- left -->
+	<div class="col-md-8">
+		<div class="col-md-12 f-title">
+			<a href="#" class="btn woyaofenxiang">我要分享</a>
+		</div>
+		<% data.forEach(function(itme) {%>
+			<div class="col-md-12">
+				<div class="touxiang">
+					<img class="" src="/imgs/wenzhangtouxinag.png" alt="">
+				</div>
+				<div class="role">
+					<span><%= itme.title %></span>
+					<p><%= itme.user.uname %> 上传了一篇文章</p>
+				</div>
+				<div class="col-md-12 wz-content">
+					<div class="col-md-4">
+						<img src="/imgs/motionpulse3.jpg" alt="">
+					</div>
+					<div class="col-md-7">
+						<div class="col-md-12">
+							<p class="content-h6"><%= itme.title %></p>
+							<p><%- itme.content %></p>
+						</div>
+						<div class="col-md-12">
+							<div class="plWrap">
+								<span class="textpl">经验/观点</span>
+								<span class="textpl">阅读量</span>
+								<span class="textpl plliang">398</span>
+								<span class="textpl">评论</span>
+								<span class="textpl plliang">620</span>
+								<span class="textpl">收藏</span>
+								<span class="textpl plliang">888</span>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+				<a href="#" class="wenzhanglj"></a>
+			</div>
+		<%}) %>
+	</div>
+
+	<!-- right -->
+	<div class="col-md-4">
+		<div class="col-md-12 r-title">
+			<a href="#" class="btn woyaofenxiang">热门推荐</a>
+		</div>
+		<div class="col-md-12">
+			<a href="#">
+				<img src="/imgs/wenzhang1110.jpg" alt="">
+			</a>
+		</div>
+		<div class="col-md-12">
+			<a href="#">
+				<img src="/imgs/wenzhang143.jpg" alt="">
+			</a>
+		</div>
+
+		<div class="col-md-12 r-title" style="margin-top:40px">
+			<a href="#" class="btn woyaofenxiang">排行榜</a>
+		</div>
+
+		<div class="col-md-12">
+			<a href="#">
+				<img src="/imgs/wenzhang1117.jpg" alt="">
+			</a>
+		</div>
+
+		<div class="col-md-12">
+			<a href="#">
+				<img src="/imgs/wenzhang320.jpg" alt="">
+			</a>
+		</div>
+
+	</div>
+	<div class="col-md-12 chakangengguo">
+		<a href="#" class="btn btn-primary">查看更多</a>
+	</div>
+</div>
+
+
+<% include layouts/footer %>

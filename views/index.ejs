@@ -1,11 +1,480 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
-</html>
+<% include layouts/header %>
+<link rel="stylesheet" href="/css/shouye.css">
+
+<!-- 首页轮播图 -->
+
+<div class="container" id="lun-wrap">
+        
+
+        <!-- 轮播图的容器 -->
+        <div class="carousel center-block slide "  data-ride="carousel" id="lun">
+            <!-- 显示轮播的图片 -->
+            <div class="carousel-inner">
+                <div class="item active">
+
+
+                    <a href="/video"><img src="/imgs/sylun-1.png" alt=""></a>
+                </div>
+                <div class="item">
+                    <a href="/video"><img src="/imgs/banner2.png" alt=""></a>
+                </div>
+                <div class="item">
+                    <a href="/video"><img src="/imgs/sylun-1.png" alt=""></a>
+                </div>
+                <div class="item">
+                    <a href="/video"><img src="/imgs/sylun-1.png" alt=""></a>
+
+                </div>
+            </div>
+
+            <!-- 定义轮播图圆点 -->
+            <!-- <ul class="carousel-indicators">
+                <li data-target="#lun" class="active" data-slide-to="0"></li>
+                <li data-target="#lun" data-slide-to="1"></li>
+                <li data-target="#lun" data-slide-to="2"></li>
+                <li data-target="#lun" data-slide-to="3"></li>
+            </ul> -->
+
+            <!-- 左右箭头 -->
+            <a href="#lun" class="left carousel-control" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a href="#lun" class="right carousel-control" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+        </div>
+</div>
+<!-- 课程 -->
+<div class="container situ">
+    <div class="rukou"><i><img src="/imgs/rukou.png" alt=""></i><span>快捷入口</span></div>
+    <div style="clear:left"></div>
+    <div class="ps">
+        <a href="/check">
+            <img src="/imgs/ps.png" alt="">
+            <h4>案例式课程</h4>
+            <p>带课程素材、源文件</p>
+        </a>
+        
+    </div>
+    <div class="ps">
+
+        <a href="/guanzhu">
+
+            <img src="/imgs/ai.png" alt="">
+            <h4>视频+图文教程</h4>
+            <p>五分钟纯干货、上班族也能看</p>
+        </a>
+        
+    </div>
+    <div class="ps">
+        <a href="javascript:;">
+            <img src="/imgs/ae.png" alt="">
+            <h4>案例式课程</h4>
+            <p>带课程素材、源文件</p>
+        </a>
+      
+    </div>
+    <div class="ps">
+        <a href="javascript:;">
+            <img src="/imgs/cd4.png" alt="">
+            <h4>案例式课程</h4>
+            <p>带课程素材、源文件</p>
+        </a>
+        
+    </div>
+</div>
+
+<!-- 视频 -->
+<div class="container" id="video">
+    <div class="shipin">
+        <i>
+            <img src="/imgs/video.png" alt="">
+        </i>
+        <span>最热视频</span>
+    </div>
+</div>
+
+<!-- video 列表 -->
+<div class="container" id="video-list">
+    <a href="/video" title="点击查看">
+        <div class="v-list noLeft">
+            <img src="/imgs/111.jpg" alt="">
+            <div class="v-play">
+                <i>
+                    <img src="/imgs/playsan.png" alt="">
+                </i>
+                <div>
+                    <span> 修图.</span> 高级人物修图
+                    <p>带课程素材、源文件</p>
+                </div>
+                <div class="sixin">
+                    <div>
+                        <img src="/imgs/youjian.png" alt="" title="私信">
+                        <h6>108</h6>
+                    </div>
+                    <div class="marg-lt">
+                        <img src="/imgs/playblue(1).png" alt="" title="播放量">
+                        <h6>108</h6>
+                    </div>
+
+                </div>
+                
+            </div>
+
+        </div>
+    </a>
+    <a href="javascript:;" title="点击查看">
+        <div class="v-list">
+            <img src="/imgs/1112.jpg" alt="">
+            <div class="v-play">
+                <i>
+                    <img src="/imgs/playsan.png" alt="">
+                </i>
+                <div>
+                    <span> 修图.</span> 高级人物修图
+                    <p>带课程素材、源文件</p>
+                </div>
+                <div class="sixin">
+                    <div>
+                        <img src="/imgs/youjian.png" alt="" title="私信">
+                        <h6>108</h6>
+                    </div>
+                    <div class="marg-lt">
+                        <img src="/imgs/playblue(1).png" alt="" title="播放量">
+                        <h6>108</h6>
+                    </div>
+
+                </div>
+                
+            </div>
+
+        </div>
+    </a>
+    <a href="javascript:;" title="点击查看">
+        <div class="v-list">
+            <img src="/imgs/1113.jpg" alt="">
+            <div class="v-play">
+                <i>
+                    <img src="/imgs/playsan.png" alt="">
+                </i>
+                <div>
+                    <span> 修图.</span> 高级人物修图
+                    <p>带课程素材、源文件</p>
+                </div>
+                <div class="sixin">
+                    <div>
+                        <img src="/imgs/youjian.png" alt="" title="私信">
+                        <h6>108</h6>
+                    </div>
+                    <div class="marg-lt">
+                        <img src="/imgs/playblue(1).png" alt="" title="播放量">
+                        <h6>108</h6>
+                    </div>
+
+                </div>
+                
+            </div>
+
+        </div>
+    </a>
+    <a href="javascript:;" title="点击查看">
+        <div class="v-list">
+            <img src="/imgs/1114.jpg" alt="">
+            <div class="v-play">
+                <i>
+                    <img src="/imgs/playsan.png" alt="">
+                </i>
+                <div>
+                    <span> 修图.</span> 高级人物修图
+                    <p>带课程素材、源文件</p>
+                </div>
+                <div class="sixin">
+                    <div>
+                        <img src="/imgs/youjian.png" alt="" title="私信">
+                        <h6>108</h6>
+                    </div>
+                    <div class="marg-lt">
+                        <img src="/imgs/playblue(1).png" alt="" title="播放量">
+                        <h6>108</h6>
+                    </div>
+
+                </div>
+                
+            </div>
+
+        </div>
+    </a>
+    <a href="javascript:;" title="点击查看">
+        <div class="v-list">
+            <img src="/imgs/1115.jpg" alt="">
+            <div class="v-play">
+                <i>
+                    <img src="/imgs/playsan.png" alt="">
+                </i>
+                <div>
+                    <span> 修图.</span> 高级人物修图
+                    <p>带课程素材、源文件</p>
+                </div>
+                <div class="sixin">
+                    <div>
+                        <img src="/imgs/youjian.png" alt="" title="私信">
+                        <h6>108</h6>
+                    </div>
+                    <div class="marg-lt">
+                        <img src="/imgs/playblue(1).png" alt="" title="播放量">
+                        <h6>108</h6>
+                    </div>
+
+                </div>
+                
+            </div>
+
+        </div>
+    </a>
+    <a href="javascript:;" title="点击查看">
+        <div class="v-list noLeft">
+            <img src="/imgs/1116.jpg" alt="">
+            <div class="v-play">
+                <i>
+                    <img src="/imgs/playsan.png" alt="">
+                </i>
+                <div>
+                    <span> 修图.</span> 高级人物修图
+                    <p>带课程素材、源文件</p>
+                </div>
+                <div class="sixin">
+                    <div>
+                        <img src="/imgs/youjian.png" alt="" title="私信">
+                        <h6>108</h6>
+                    </div>
+                    <div class="marg-lt">
+                        <img src="/imgs/playblue(1).png" alt="" title="播放量">
+                        <h6>108</h6>
+                    </div>
+
+                </div>
+                
+            </div>
+
+        </div>
+    </a>
+    <a href="javascript:;" title="点击查看">
+        <div class="v-list">
+            <img src="/imgs/1117.jpg" alt="">
+            <div class="v-play">
+                <i>
+                    <img src="/imgs/playsan.png" alt="">
+                </i>
+                <div>
+                    <span> 修图.</span> 高级人物修图
+                    <p>带课程素材、源文件</p>
+                </div>
+                <div class="sixin">
+                    <div>
+                        <img src="/imgs/youjian.png" alt="" title="私信">
+                        <h6>108</h6>
+                    </div>
+                    <div class="marg-lt">
+                        <img src="/imgs/playblue(1).png" alt="" title="播放量">
+                        <h6>108</h6>
+                    </div>
+
+                </div>
+                
+            </div>
+
+        </div>
+    </a>
+    <a href="javascript:;" title="点击查看">
+        <div class="v-list">
+            <img src="/imgs/1118.jpg" alt="">
+            <div class="v-play">
+                <i>
+                    <img src="/imgs/playsan.png" alt="">
+                </i>
+                <div>
+                    <span> 修图.</span> 高级人物修图
+                    <p>带课程素材、源文件</p>
+                </div>
+                <div class="sixin">
+                    <div>
+                        <img src="/imgs/youjian.png" alt="" title="私信">
+                        <h6>108</h6>
+                    </div>
+                    <div class="marg-lt">
+                        <img src="/imgs/playblue(1).png" alt="" title="播放量">
+                        <h6>108</h6>
+                    </div>
+
+                </div>
+                
+            </div>
+
+        </div>
+    </a>
+    <a href="javascript:;" title="点击查看">
+        <div class="v-list">
+            <img src="/imgs/1119.jpg" alt="">
+            <div class="v-play">
+                <i>
+                    <img src="/imgs/playsan.png" alt="">
+                </i>
+                <div>
+                    <span> 修图.</span> 高级人物修图
+                    <p>带课程素材、源文件</p>
+                </div>
+                <div class="sixin">
+                    <div>
+                        <img src="/imgs/youjian.png" alt="" title="私信">
+                        <h6>108</h6>
+                    </div>
+                    <div class="marg-lt">
+                        <img src="/imgs/playblue(1).png" alt="" title="播放量">
+                        <h6>108</h6>
+                    </div>
+
+                </div>
+                
+            </div>
+
+        </div>
+    </a>
+    <a href="javascript:;" title="点击查看">
+        <div class="v-list">
+            <img src="/imgs/1110.jpg" alt="">
+            <div class="v-play">
+                <i>
+                    <img src="/imgs/playsan.png" alt="">
+                </i>
+                <div>
+                    <span> 修图.</span> 高级人物修图
+                    <p>带课程素材、源文件</p>
+                </div>
+                <div class="sixin">
+                    <div>
+                        <img src="/imgs/youjian.png" alt="" title="私信">
+                        <h6>108</h6>
+                    </div>
+                    <div class="marg-lt">
+                        <img src="/imgs/playblue(1).png" alt="" title="播放量">
+                        <h6>108</h6>
+                    </div>
+
+                </div>
+                
+            </div>
+
+        </div>
+    </a>  
+</div>
+
+<!-- 查看更多 -->
+<div class="container" id="chakan">
+    <div class="btn btn-primary">
+        <a href="javascrpt:;">查看更多</a>
+    </div>
+</div>
+
+<!-- video 列表结束 -->
+
+<!-- 最热文档头部开始-->
+<div class="container" id="video">
+    <div class="shipin">
+        <i>
+            <img src="/imgs/text(1).png" alt="">
+        </i>
+
+        <span>最热文档</span>
+    </div>
+</div>
+
+<!-- 最热文档内容开始 -->
+<div class="container" id="holText">
+    <div class="box">
+        <div class="box-img"><img src="/imgs/box1.png" alt=""></div>
+        <div class="box-text">
+            <h4>场景合成</h4>
+            <h6>沙漠海洋类合成详解</h6>
+            <a href="javascript:;" class="tuwen">图文详情</a>
+            <a href="javascript:;" class="kanvideo">查看视频</a>
+        </div>
+    </div>
+    <div class="box">
+        <div class="box-img"><img src="/imgs/box2.png" alt=""></div>
+        <div class="box-text">
+            <h4>场景合成</h4>
+            <h6>沙漠海洋类合成详解</h6>
+            <a href="javascript:;" class="tuwen">图文详情</a>
+            <a href="javascript:;" class="kanvideo">查看视频</a>
+        </div>
+    </div>
+    <div class="box">
+        <div class="box-img"><img src="/imgs/box3.png" alt=""></div>
+        <div class="box-text">
+            <h4>场景合成</h4>
+            <h6>沙漠海洋类合成详解</h6>
+            <a href="javascript:;" class="tuwen">图文详情</a>
+            <a href="javascript:;" class="kanvideo">查看视频</a>
+        </div>
+    </div>
+    <div class="box">
+        <div class="box-img"><img src="/imgs/box4.png" alt=""></div>
+        <div class="box-text">
+            <h4>场景合成</h4>
+            <h6>沙漠海洋类合成详解</h6>
+            <a href="javascript:;" class="tuwen">图文详情</a>
+            <a href="javascript:;" class="kanvideo">查看视频</a>
+        </div>
+    </div>
+</div>
+
+<div class="container" id="holText">
+    <div class="box">
+        <div class="box-img"><img src="/imgs/box4.png" alt=""></div>
+        <div class="box-text">
+            <h4>场景合成</h4>
+            <h6>沙漠海洋类合成详解</h6>
+            <a href="javascript:;" class="tuwen">图文详情</a>
+            <a href="javascript:;" class="kanvideo">查看视频</a>
+        </div>
+    </div>
+    <div class="box">
+        <div class="box-img"><img src="/imgs/box3.png" alt=""></div>
+        <div class="box-text">
+            <h4>场景合成</h4>
+            <h6>沙漠海洋类合成详解</h6>
+            <a href="javascript:;" class="tuwen">图文详情</a>
+            <a href="javascript:;" class="kanvideo">查看视频</a>
+        </div>
+    </div>
+    <div class="box">
+        <div class="box-img"><img src="/imgs/box2.png" alt=""></div>
+        <div class="box-text">
+            <h4>场景合成</h4>
+            <h6>沙漠海洋类合成详解</h6>
+            <a href="javascript:;" class="tuwen">图文详情</a>
+            <a href="javascript:;" class="kanvideo">查看视频</a>
+        </div>
+    </div>
+    <div class="box">
+        <div class="box-img"><img src="/imgs/box1.png" alt=""></div>
+        <div class="box-text">
+            <h4>场景合成</h4>
+            <h6>沙漠海洋类合成详解</h6>
+            <a href="javascript:;" class="tuwen">图文详情</a>
+            <a href="javascript:;" class="kanvideo">查看视频</a>
+        </div>
+    </div>
+    <div id="text-anniu">
+        <div class="btn btn-primary">
+            <a href="javascrpt:;">查看更多</a>
+        </div>
+    </div>
+
+
+</div>
+
+
+
+
+<% include layouts/footer %>

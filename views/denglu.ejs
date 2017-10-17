@@ -1,0 +1,54 @@
+<% include layouts/header %>
+<!-- 引入css -->
+<link rel="stylesheet" href="/css/denglu.css">
+
+<div id="denglu-wrap" class="container">
+	<!-- 此位置连接用于链接登录页面 -->
+	<p>
+		<h4 id="denglu-title">欢迎回来</h4>
+		<a id="denglu-lianjie" href="/reg">还没有账号？立即注册</a>
+	</p>
+	<form action="/doLogin" method="post">	
+		<div class="input-group">
+		   <div class="input-group-addon">
+				<span class="glyphicon glyphicon-user" id="basic-addon1"></span>
+		   </div>
+		   <input type="text" id="uname" name="uname" class="form-control" placeholder="请输入用户名 / 邮箱" aria-describedby="basic-addon1">
+		</div>
+
+		<div class="input-group">
+		  <div class="input-group-addon">
+			 <span class="glyphicon glyphicon-lock" id="basic-addon2"></span>
+		  </div>
+		 
+		  <input id="upwd" name="upwd" type="password" class="form-control" placeholder="请输入密码" aria-describedby="basic-addon2">
+		</div>
+		
+		<div class="form-group">
+			<button id="form-tijiao" class="btn btn-primary" type="submit">登录</button>
+		</div>
+		
+	</form>
+	<div class="col-md-12">
+		<span class="col-md-10">如登录出现异常，请处理浏览器缓存尝试。</span><a href="#">忘记密码</a>
+	</div>
+	<div class="divider">
+		<div class="disanfang-title">
+			第三方登录
+		</div>	
+	</div>
+	<div id="disanfang-lianjie" class="col-md-12">
+		<div class="col-md-4">
+			<a href="#" class="center-block"><img src="/imgs/qq.jpg" alt=""></a>
+		</div>
+		<div class="col-md-4">
+			<a href="#" class="center-block"><img src="/imgs/weixin.jpg" alt=""></a>
+		</div>
+		<div class="col-md-4">
+			<a href="#" class="center-block"><img src="/imgs/xinlang.jpg" alt=""></a>
+		</div>
+
+	</div>
+</div>
+
+<% include layouts/footer %>

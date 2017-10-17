@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>欢迎进入UI+</title>
+	<!-- 引入Bootstrap的css -->
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+
+	<!-- 引入jQuery -->
+	<script src="/js/jquery.min.js"></script>
+
+	<!-- 引入Bootstrap的js文件 -->
+	<script src="/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" href="/css/reset.css">
+	
+	<link rel="stylesheet" href="/css/header.css">
+	<link rel="icon" href="/imgs/logo.png">
+
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0,user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+</head>
+<body>
+<div id="dingbu" class="container">
+	<div id="dingbu-logo" class="col-md-3">
+		<a href="/">
+			<img src="/imgs/logo.png" alt="">
+			<p>
+		<% 
+			// console.log(user) 
+			if (user) {
+		%>
+			<%= user.uname  %> 欢迎回家
+		<%
+			} else { 
+		%>
+			<span>欢迎进入UI+</span>
+		<%
+			}
+		%>
+			
+				
+			</p>
+		</a>
+	</div>
+	<!-- 此位置用于连接下载App页面，和登录注册页面 -->
+	<div class="col-md-9">
+
+		<a class="dinglu-right dinglu-right-xiazai" href="#">下载APP</a>
+		<% 
+			// console.log(user) 
+			if (user) {
+		%>
+
+			<a class="dinglu-right dinglu-right-denglu" href="/logout">注销</a>
+		<%
+			} else { 
+		%>
+			<a class="dinglu-right dinglu-right-denglu" href="/denglu">登录/注册</a>
+		<%
+			}
+		%>
+		
+
+				
+	
+
+	</div>
+</div>
+<div class="container" id="nav-wrap">
+	<!-- 导航部分 -->
+	<nav style="border:0;background:#0E0E10;" class="navbar navbar-default col-md-12">
+		<ul id="navList" class="nav navbar-nav">
+	        <li class="<%= path==='/'? 'active':'' %>"><a href="/">首页 <span class="sr-only">(current)</span></a></li>
+	        <li class="<%= path==='/Personal_Tailor'? 'active':'' %>" ><a href="/Personal_Tailor">私人订制</a></li>
+	        <li class="<%= path==='/study_manual'? 'active':'' %>"><a href="/study_manual">学习</a></li>
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">更多 <span class="caret"></span></a>
+	          <ul class="dropdown-menu">
+	            <li><a href="/homepage">设计师</a></li>
+	            <li><a href="/ruanjian">工具</a></li>
+	            <li><a href="/huodong">活动</a></li>
+	            <li><a href="/wenzhang">文章</a></li>
+	          </ul>
+	        </li>
+	    </ul>
+	    <div>
+	    	<form id="navshousuo" class="navbar-form navbar-right">
+		    <div class="form-group">
+		      <input type="text" class="form-control" placeholder="Search">
+	      	  <div class="fontwrap">
+	   			<span class="glyphicon glyphicon-search"></span>
+	   		  </div>  
+		    </div>
+		    </form>
+	    </div>
+	</nav>
+</div>
+
+
