@@ -19,8 +19,6 @@ router.get('/homepage', checkUserLogin , index.homepage);
 router.get('/huodong',index.huodong);
 
 router.get('/wenzhang', index.wenzhang);
-
-
 // 检测用户名是否可用的路由
 router.get('/checkUser', index.checkUser);
 

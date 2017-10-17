@@ -15,7 +15,7 @@
 				</div>
 				<div class="role">
 					<span><%= itme.title %></span>
-					<p><%= itme.user.uname %> 上传了一篇文章</p>
+					<p><span class="sname"><%= itme.user.uname %></span>上传了一篇文章</p>
 				</div>
 				<div class="col-md-12 wz-content">
 					<div class="col-md-4">
@@ -28,7 +28,8 @@
 						</div>
 						<div class="col-md-12">
 							<div class="plWrap">
-								<span class="textpl">经验/观点</span>
+
+								<span class="textpl"><a href="javascript:void(0)" class="sdianzan" style="color:#fff;">点赞<%= %></a></span>
 								<span class="textpl">阅读量</span>
 								<span class="textpl plliang">398</span>
 								<span class="textpl">评论</span>
@@ -40,7 +41,6 @@
 						</div>
 					</div>
 				</div>
-				<a href="#" class="wenzhanglj"></a>
 			</div>
 		<%}) %>
 	</div>
@@ -82,6 +82,47 @@
 		<a href="#" class="btn btn-primary">查看更多</a>
 	</div>
 </div>
-
-
 <% include layouts/footer %>
+
+<script>
+	var isClick = false;
+	$('.sdianzan').each(function(){
+
+		$(this).click(function() {
+			if(!isClick){
+				// 获取点赞人的用户名
+				var uname = $('.role p>span').html().trim();
+				// var title = $('.role>span').html().trim();
+				// console.log(uname,title);
+
+				$.ajax({
+					url:'/dianzan/dianzan',
+					type: 'post',
+					context: $(this),
+					data: {
+						uname : uname
+						// title : title
+					},
+					success: function(res) {
+						// console.log(res)
+						if(res== 'ok'){
+							console.log('点赞成功')
+							isClick = true;
+						}else{
+							console.log('点赞失败')
+							isClick = true;
+						}
+						
+					},
+					error:function(error) {
+						console.log(error)
+						isClick = true;
+					}
+
+				});
+			}	
+		});
+	})
+</script>
+
+
