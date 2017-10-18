@@ -8,7 +8,10 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/user.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/uploadFile.ejs" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/userSetting.ejs" />
+<<<<<<< HEAD
       <change type="MOVED" beforePath="$PROJECT_DIR$/routes/users.js" afterPath="$PROJECT_DIR$/routes/user.js" />
+=======
+>>>>>>> 孙丽珍最新提交
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/index.js" afterPath="$PROJECT_DIR$/controllers/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/userModel.js" afterPath="$PROJECT_DIR$/models/userModel.js" />
@@ -18,6 +21,11 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/index.js" afterPath="$PROJECT_DIR$/routes/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/homepage.ejs" afterPath="$PROJECT_DIR$/views/homepage.ejs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/layouts/header.ejs" afterPath="$PROJECT_DIR$/views/layouts/header.ejs" />
+<<<<<<< HEAD
+=======
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/wenzhang.ejs" afterPath="$PROJECT_DIR$/views/wenzhang.ejs" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/routes/users.js" afterPath="$PROJECT_DIR$/routes/user.js" />
+>>>>>>> 孙丽珍最新提交
     </list>
     <ignored path="theking.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,11 +48,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+<<<<<<< HEAD
       <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="726">
               <caret line="91" column="23" selection-start-line="91" selection-start-column="23" selection-end-line="91" selection-end-column="23" />
+=======
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="363">
+              <caret line="11" column="61" selection-start-line="11" selection-start-column="61" selection-end-line="11" selection-end-column="61" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="wenzhang.ejs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/wenzhang.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3738">
+              <caret line="128" column="0" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
+>>>>>>> 孙丽珍最新提交
               <folding />
             </state>
           </provider>
@@ -87,8 +113,14 @@
         <option value="$PROJECT_DIR$/config/db_config.js" />
         <option value="$PROJECT_DIR$/views/userSetting.ejs" />
         <option value="$PROJECT_DIR$/controllers/user.js" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/../../cnode/config/db_config.js" />
         <option value="$PROJECT_DIR$/app.js" />
+=======
+        <option value="$USER_HOME$/Desktop/cnode/config/db_config.js" />
+        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/views/wenzhang.ejs" />
+>>>>>>> 孙丽珍最新提交
       </list>
     </option>
   </component>
@@ -134,11 +166,15 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< HEAD
       <pane id="Scope" />
+=======
+>>>>>>> 孙丽珍最新提交
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
+<<<<<<< HEAD
               <option name="myItemId" value="theking1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
@@ -156,12 +192,26 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
+=======
+              <option name="myItemId" value="theking" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+>>>>>>> 孙丽珍最新提交
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
+<<<<<<< HEAD
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../lianxi" />
+>>>>>>> 孙丽珍最新提交
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
@@ -243,12 +293,19 @@
       <updated>1508199902611</updated>
       <workItem from="1508199905507" duration="34943000" />
       <workItem from="1508251145056" duration="3220000" />
+<<<<<<< HEAD
       <workItem from="1508289345493" duration="4167000" />
       <workItem from="1508295462842" duration="149000" />
+=======
+      <workItem from="1508289345493" duration="4840000" />
+      <workItem from="1508296096680" duration="81000" />
+      <workItem from="1508296660156" duration="200000" />
+>>>>>>> 孙丽珍最新提交
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="42479000" />
   </component>
   <component name="ToolWindowManager">
@@ -256,6 +313,15 @@
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1954612" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+=======
+    <option name="totallyTimeSpent" value="43284000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1954612" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+>>>>>>> 孙丽珍最新提交
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -308,6 +374,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="10" column="51" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="51" />
+<<<<<<< HEAD
+=======
+          <folding>
+            <element signature="e#0#44#0" expanded="false" />
+            <element signature="e#2505#2974#0" expanded="false" />
+          </folding>
+>>>>>>> 孙丽珍最新提交
         </state>
       </provider>
     </entry>
@@ -329,6 +402,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+<<<<<<< HEAD
+=======
+          <folding>
+            <element signature="e#0#44#0" expanded="false" />
+            <element signature="e#2505#2974#0" expanded="false" />
+          </folding>
+>>>>>>> 孙丽珍最新提交
         </state>
       </provider>
     </entry>
@@ -444,7 +524,11 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/../../sendEmail_config.js">
+=======
+    <entry file="file://$USER_HOME$/Desktop/sendEmail_config.js">
+>>>>>>> 孙丽珍最新提交
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="99">
           <caret line="3" column="36" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="36" />
@@ -546,12 +630,24 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/../../cnode/config/db_config.js" />
     <entry file="file://$PROJECT_DIR$/../../vue.js" />
+=======
+    <entry file="file://$USER_HOME$/Desktop/cnode/config/db_config.js" />
+    <entry file="file://$USER_HOME$/Desktop/vue.js" />
+>>>>>>> 孙丽珍最新提交
     <entry file="file://$PROJECT_DIR$/controllers/user.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="123" column="38" selection-start-line="123" selection-start-column="38" selection-end-line="123" selection-end-column="38" />
+<<<<<<< HEAD
+=======
+          <folding>
+            <element signature="e#0#44#0" expanded="false" />
+            <element signature="e#2505#2974#0" expanded="false" />
+          </folding>
+>>>>>>> 孙丽珍最新提交
         </state>
       </provider>
     </entry>
@@ -569,6 +665,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/config/db_config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
@@ -576,6 +673,8 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> 孙丽珍最新提交
     <entry file="file://$PROJECT_DIR$/middlewares/checkUserLogin.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
@@ -590,10 +689,32 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="726">
           <caret line="91" column="23" selection-start-line="91" selection-start-column="23" selection-end-line="91" selection-end-column="23" />
+=======
+    <entry file="file://$PROJECT_DIR$/config/db_config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="11" column="61" selection-start-line="11" selection-start-column="61" selection-end-line="11" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/wenzhang.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3738">
+          <caret line="128" column="0" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
+>>>>>>> 孙丽珍最新提交
           <folding />
         </state>
       </provider>
