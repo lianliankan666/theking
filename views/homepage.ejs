@@ -22,23 +22,27 @@
 				</div>
 			</li>
 			<li class="col-md-4 head-cter" style="display:block;text-align:center;">
-				<img  class="img-circle center-block touxiang" src="./imgs/Rectangle 9.png" alt="">
+				<img  class="img-circle center-block touxiang" src="<%=user.userimg?'/uploads/'+user.userimg:'/uploads/doubi.jpg'%>" alt="" style="width:150px">
 				<p><%= user.uname %></p>
 				<span style="margin-top:14px;color:#fff;"><%= user.qianming %></span>
 			</li>
 			<li class="col-md-4">
 				<ul class="list-unstyled head-rg">
-					<li class="col-sm-4">
+					<li class="col-sm-3">
 						<span><%= user.zuopin %></span>
 						<span class="">作品</span>
 					</li>
-					<li class="col-sm-4">
+					<li class="col-sm-3">
 						<span><%= user.fensi %></span>
 						<span>粉丝</span>
 					</li>
-					<li class="col-sm-4">
+					<li class="col-sm-3">
 						<span><%= user.guanzhu %></span>
 						<span>关注</span>
+					</li>
+					<li class="col-sm-3">
+						<span><%= user.dianzan %></span>
+						<span>点赞</span>
 					</li>
 				</ul>
 				<div class="guanzhu">

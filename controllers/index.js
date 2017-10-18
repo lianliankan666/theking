@@ -6,7 +6,7 @@ var index = {};
 var userModel = require('../models/userModel');
 var uimanyModel = require('../models/uimanyModel');
 var cryptoStr = require('../config/crypto_config');
-
+var uploadFile = require("../config/uploadFile_config");
 
 // 检测用户名的方法
 index.checkUser = function(req, res){
@@ -164,6 +164,13 @@ index.huodong = function(req,res){
 
 	res.render('huodong')
 }
+
+//上传文件页面;
+index.uploadFile = function(req,res){
+	res.render("uploadFile")
+}
+
+
 
 // 向外导出
 module.exports =index;

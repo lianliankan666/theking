@@ -1,0 +1,109 @@
+<% include layouts/header %>
+<%if(user.uname){%>
+<div class="container" style="margin-bottom:50px">
+    <% if(loginError.length){%>
+    <div class="alert alert-danger">
+        <p>
+            <%=loginError.toString()%>
+            <span class="close" data-dismiss="alert">&times;</span>
+        </p>
+    </div>
+    <%}%>
+    <form action="/user/doSetting" method="post" style="color:#fff;">
+        <div class="form-group">
+            <label for="exampleInputEmail1">用户名</label>
+            <input type="text" readonly name="usename" class="form-control" id="exampleInputEmail1" value="<%= user.uname %>">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">当前密码</label>
+            <input type="password" class="form-control" id="exampleInputEmail1" value="" name="userpwd">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">修改密码</label>
+            <input type="password" name="userpwd2" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">个性签名</label>
+            <div>
+                <testarea><%= user.qianming %></testarea>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-default">修改密码</button>
+    </form>
+</div>
+<div class="container">
+    <!--修改头像-->
+    <form action="/user/doChangeimg" method="post" style="color:#fff;margin-top：100px" enctype="multipart/form-data">
+        <% if(fileError.length){%>
+        <div class="alert alert-danger">
+            <p>
+                <%=fileError.toString()%>
+                <span class="close" data-dismiss="alert">&times;</span>
+            </p>
+        </div>
+        <%}%>
+        <div class="form-group">
+            <img src="<%=user.userimg?'/uploads/'+user.userimg:'/uploads/doubi.jpg'%>" style="width:50px;height:50px">
+            <label for="exampleInputPassword1">个人头像</label>
+            <input type="file" name="userpic" id="exampleInputPassword1">
+        </div>
+        <button type="submit" class="btn btn-default">更改头像</button>
+    </form>
+</div>
+
+<!--绑定邮箱-->
+<div class="container" style="margin-top:50px">
+    <form action="/user/useremail" method="post" style="color:#fff;" id="useremail">
+        <div class="form-group">
+            <label for="exampleInputEmail1">绑定邮箱</label>
+            <input type="text" name="useremail" class="form-control" id="exampleInputEmail1" value="<%=user.useremail || ""%>">
+            <span class="help-msg"></span>
+        </div>
+        <button type="submit" class="btn btn-default">绑定邮箱</button>
+    </form>
+</div>
+<%}%>
+
+<% include layouts/footer %>
+<script>
+//    邮箱验证
+    var useremailOK = false;
+    $("#useremail").submit(function(){
+        if(!useremailOK){
+            return false;
+        }
+    })
+$("#useremail").submit(function(){
+    $("input[name='useremail']").next().show().addClass("error").removeClass("success").html("验证码已发出,请到邮箱验证");
+})
+//    失去焦点的时候;
+    $("input[name='useremail']").blur(function(){
+        var useremail = $(this).val();
+        if($(this).val() == ""){
+            $(this).next().show().addClass("error").removeClass("success").html("邮箱不能为空");
+        }
+        $.ajax({
+            url:"/user/checkemail",
+            type:"get",
+            data:{
+                useremail:useremail
+            },
+            context:$(this),
+            success:function(msg){
+               if(msg.code == 0){
+                    //不能被绑定
+                  $(this).next().addClass("error").removeClass("success").show().html("邮箱已经被占用")
+                   useremailOK = false;
+               }else{
+                   //可以绑定
+                   console.log("可以被绑定");
+                   $(this).next().addClass("success").removeClass("error").show().html("邮箱可以绑定")
+                   useremailOK = true;
+               }
+            },
+            error:function(err){
+                console.log("出现的错误是",err)
+            }
+        })
+    })
+</script>
