@@ -14,6 +14,10 @@ var checkUserLogin = require('./middlewares/checkUserLogin');
 
 var index = require('./routes/index');
 var user = require('./routes/user');
+<<<<<<< HEAD
+=======
+
+>>>>>>> dev
 var create = require('./routes/create');
 var dianzan = require('./routes/dianzan');
 
@@ -91,7 +95,13 @@ app.use(function(req, res, next) {
 app.use('/', index);
 app.use('/create', create);
 app.use('/user', user);
+<<<<<<< HEAD
 app.use('/dianzan', checkUserLogin,dianzan);
+=======
+
+app.use('/dianzan', checkUserLogin,dianzan);
+
+>>>>>>> dev
 app.use('/video', video);
 app.use('/ruanjian', ruanjian);
 app.use('/shouce1', shouce1);
