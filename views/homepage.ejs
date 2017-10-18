@@ -3,7 +3,7 @@
 
 <div class="container">
 		<!-- 头部开始 -->
-		<ul class="list-unstyled header">
+		<ul class="list-unstyled header"> 
 			<li class="col-md-4">
 				<div class="integral">
 					<div class="integral-top">
@@ -45,10 +45,14 @@
 						<span>点赞</span>
 					</li>
 				</ul>
+				<% if (!user) { %> 
+					
 				<div class="guanzhu">
 					<img src="./imgs/gz.png" alt=""></img>
 					<b style="margin-right:7px;">点击关注</b>
 				</div>
+				<% } %>
+				
 			</li>
 		</ul>
 		<!-- 头部结束 -->

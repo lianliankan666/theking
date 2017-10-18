@@ -19,3 +19,13 @@ $('.jieda-list').click(function(){
 	$('#jieda').removeClass("active");
 	$('.jxqing').show();
 });
+
+// 点击关注
+
+
+// $('.guanzhu').click(function(){
+
+// 	$('.guanzhu>b').html('取消关注');
+
+	
+// })

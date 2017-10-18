@@ -8,10 +8,7 @@ var router = express.Router();
 
 // 加载对应的控制器
 var guanzhu = require('../controllers/guanzhu');
-
-router.get('/',guanzhu.index);
-
+router.get('/', guanzhu.index);
 
 
-module.exports = router;  
-  
+module.exports = router; 

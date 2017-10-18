@@ -15,3 +15,9 @@ router.post('/dianzan',checkUserLogin,dianzan.index);
 
 // 向外暴露
 module.exports = router;
+router.post('/dianzan',dianzan.index);
+
+router.post('/guanzhu', dianzan.guanzhu);
+
+// 向外暴露
+module.exports = router; 

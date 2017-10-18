@@ -28,6 +28,11 @@ var check = require('./routes/check');
 var training_battalion = require('./routes/training_battalion');
 var guanzhu = require('./routes/guanzhu');
 
+
+var dianzan = require('./routes/dianzan');
+
+
+
 var app = express();
 
 // view engine setup
@@ -78,7 +83,14 @@ app.use(function(req, res, next) {
 	// 挂载错误信息
 	res.locals.loginError = req.flash('loginError');
 	res.locals.fileError = req.flash('fileError');
-	res.locals.emailError = req.flash('emailError');
+	res.locals.emailError = req.flash('emailError')
+
+    res.locals.dianzanres = req.flash('dianzanres');
+	res.locals.guanzhures = req.flash('guanzhures');
+	
+
+
+
 	// console.log(res.locals.loginError)
 	// 挂载路由
 	res.locals.path = req.path;
@@ -94,7 +106,8 @@ app.use('/create', create);
 app.use('/user', user);
 
 app.use('/dianzan', checkUserLogin,dianzan);
-
+app.use('/dianzan',dianzan);
+app.use('/users', users);
 
 app.use('/video', video);
 app.use('/ruanjian', ruanjian);
@@ -106,7 +119,6 @@ app.use('/check', check);
 app.use('/training_battalion', training_battalion);
 app.use('/guanzhu', guanzhu);
 // app.use('/denglu', denglu);
-
 
 
 // catch 404 and forward to error handler

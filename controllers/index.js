@@ -89,6 +89,17 @@ index.index = function(req,res ) {
 		res 响应
 	*/ 
 	// 响应模板
+	// console.log(req.session);
+	 if(req.session.user){
+
+       user = req.session.user;
+
+          console.log('用户登录了。。')
+    }else{
+
+         console.log('用户没有登录')
+    }
+
 	res.render('index')
 }
 
@@ -157,7 +168,7 @@ index.wenzhang = function(req,res){
 
 
 index.homepage = function(req,res){
-
+    
 	res.render('homepage')
 }
 index.huodong = function(req,res){
