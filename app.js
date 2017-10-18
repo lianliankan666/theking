@@ -82,7 +82,8 @@ app.use(function(req, res, next) {
 	// 挂载错误信息
 	res.locals.loginError = req.flash('loginError');
 
-	res.locals.dianzanres = req.flash('dianzanres');
+    res.locals.dianzanres = req.flash('dianzanres');
+	res.locals.guanzhures = req.flash('guanzhures');
 	
 
 
@@ -99,7 +100,7 @@ app.use(function(req, res, next) {
 app.use('/', index);
 app.use('/create', create);
 
-app.use('/dianzan', checkUserLogin,dianzan);
+app.use('/dianzan',dianzan);
 app.use('/users', users);
 app.use('/video', video);
 app.use('/ruanjian', ruanjian);

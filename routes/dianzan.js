@@ -11,7 +11,9 @@ var dianzan = require('../controllers/dianzan');
 var checkUserLogin = require('../middlewares/checkUserLogin');
 
 
-router.post('/dianzan',checkUserLogin,dianzan.index);
+router.post('/dianzan',dianzan.index);
+
+router.post('/guanzhu', dianzan.guanzhu);
 
 // 向外暴露
-module.exports = router;
+module.exports = router; 
