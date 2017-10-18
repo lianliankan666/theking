@@ -8,6 +8,18 @@
 		<div class="col-md-12 f-title">
 			<a href="#" class="btn woyaofenxiang">我要分享</a>
 		</div>
+		<% data.forEach(function(itme) {%>
+		<div class="col-md-12">
+			<div class="touxiang">
+				<img class="" src="/imgs/wenzhangtouxinag.png" alt="">
+			</div>
+			<div class="role">
+				<span><%= itme.title %></span>
+				<p><span class="sname"><%= itme.user.uname %></span>上传了一篇文章</p>
+			</div>
+			<div class="col-md-12 wz-content">
+				<div class="col-md-4">
+					<img src="/imgs/motionpulse3.jpg" alt="">
 		<% data.forEach(function(item) {%>
 			<div class="col-md-12">
 				<div class="touxiang">
@@ -17,34 +29,33 @@
 					<span><%= item.title %></span>
 					<p><span class="sname"><%= item.user.uname %></span>上传了一篇文章</p>
 				</div>
-				<div class="col-md-12 wz-content">
-					<div class="col-md-4">
-						<img src="/imgs/motionpulse3.jpg" alt="">
+				<div class="col-md-7">
+					<div class="col-md-12">
+						<p class="content-h6"><%= itme.title %></p>
+						<p><%- itme.content %></p>
 					</div>
-					<div class="col-md-7">
-						<div class="col-md-12">
-							<p class="content-h6"><%= item.title %></p>
-							<p><%= item.content %></p>
-						</div>
-						<div class="col-md-12">
-							<div class="plWrap">
 
-								<span class="textpl"><a href="javascript:void(0)" class="sdianzan" style="color:#fff;">点赞<%= item.dianzan %></a>
-								</span>
-								<span class="textpl btn btn-danger"><a href="javascript:void(0)" class="sguanzhu" style="color:#fff;">关注作者<%= item.guanzhu %></a>
-								</span>
-								<span class="textpl">阅读量</span>
-								<span class="textpl plliang">398</span>
-								<span class="textpl">评论</span>
-								<span class="textpl plliang">620</span>
-								<span class="textpl">收藏</span>
-								<span class="textpl plliang">888</span>
-							</div>
-							
+					<div class="col-md-12">
+						<div class="plWrap">
+
+							<span class="textpl"><a href="javascript:void(0)" class="sdianzan" style="color:#fff;">点赞<%= %></a></span>
+							<span class="textpl">阅读量</span>
+							<span class="textpl plliang">398</span>
+							<span class="textpl">评论</span>
+							<span class="textpl plliang">620</span>
+							<span class="textpl">收藏</span>
+							<span class="textpl plliang">888</span>
+
+					
+
+
+			
 						</div>
+
 					</div>
 				</div>
 			</div>
+		</div>
 		<%}) %>
 	</div>
 
@@ -88,6 +99,17 @@
 <% include layouts/footer %>
 
 <script>
+
+	var isClick = false;
+	$('.sdianzan').each(function(){
+
+		$(this).click(function() {
+			if(!isClick){
+				// 获取点赞人的用户名
+				var uname = $('.role p>span').html().trim();
+				// var title = $('.role>span').html().trim();
+				// console.log(uname,title);
+
 	// var isClick = false;
 	$('.sdianzan').each(function(){
 
@@ -110,22 +132,25 @@
 						// console.log(res)
 						if(res== 'ok'){
 							console.log('点赞成功')
-							// isClick = true;
+
+							isClick = true;
 						}else{
 							console.log('点赞失败')
-							// isClick = true;
+							isClick = true;
 						}
-						
+
 					},
 					error:function(error) {
 						console.log(error)
-						// isClick = true;
+						isClick = true;
 					}
 
 				});
-			// }	
+			}
 		});
 	})
+		
+				
 
 	$(function(){
 

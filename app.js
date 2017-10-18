@@ -13,9 +13,10 @@ var checkUserLogin = require('./middlewares/checkUserLogin');
 
 
 var index = require('./routes/index');
-var users = require('./routes/users');
-var create = require('./routes/create');
+var user = require('./routes/user');
 
+var create = require('./routes/create');
+var dianzan = require('./routes/dianzan');
 
 var video = require('./routes/video');
 var ruanjian = require('./routes/ruanjian');
@@ -81,10 +82,13 @@ app.use(function(req, res, next) {
 	// console.log(req.flash('loginError'));
 	// 挂载错误信息
 	res.locals.loginError = req.flash('loginError');
+	res.locals.fileError = req.flash('fileError');
+	res.locals.emailError = req.flash('emailError')
 
     res.locals.dianzanres = req.flash('dianzanres');
 	res.locals.guanzhures = req.flash('guanzhures');
 	
+
 
 
 	// console.log(res.locals.loginError)
@@ -99,9 +103,12 @@ app.use(function(req, res, next) {
 
 app.use('/', index);
 app.use('/create', create);
+app.use('/user', user);
 
+app.use('/dianzan', checkUserLogin,dianzan);
 app.use('/dianzan',dianzan);
 app.use('/users', users);
+
 app.use('/video', video);
 app.use('/ruanjian', ruanjian);
 app.use('/shouce1', shouce1);

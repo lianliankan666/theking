@@ -19,6 +19,7 @@ router.get('/homepage', checkUserLogin , index.homepage);
 router.get('/huodong',index.huodong);
 
 router.get('/wenzhang', index.wenzhang);
+
 // 检测用户名是否可用的路由
 router.get('/checkUser', index.checkUser);
 
@@ -31,6 +32,7 @@ router.post('/doLogin', index.doLogin);
 
 router.get('/logout', index.logout);
 
-
+//上传文件路由
+router.get("/uploadFile",index.uploadFile)
 
 module.exports = router;

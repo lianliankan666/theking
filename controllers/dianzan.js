@@ -2,8 +2,6 @@
 
 // 定义对象
 var dianzan = {};
-
-
 var userModel = require('../models/userModel');
 var uimanyModel = require('../models/uimanyModel');
 var cryptoStr = require('../config/crypto_config');
@@ -17,7 +15,6 @@ dianzan.index = function(req, res) {
 	var con = {
 		uname: req.body.uname
 	}
-	// console.log(con);
 	// 以此条件查询
 	
 	userModel.update(con, {$inc:{dianzan:1}}, function(err){
@@ -32,8 +29,6 @@ dianzan.index = function(req, res) {
 		
 	})
 }
-
-
 
 // 添加关注
 
@@ -59,9 +54,6 @@ dianzan.guanzhu = function(req, res) {
             
         }
         
-    })
-}
-
 // 向外导出
 module.exports = dianzan;  
  
