@@ -22,7 +22,7 @@
 				</div>
 			</li>
 			<li class="col-md-4 head-cter" style="display:block;text-align:center;">
-				<img  class="img-circle center-block touxiang" src="./imgs/Rectangle 9.png" alt="">
+				<img  class="img-circle center-block touxiang" src="<%=user.userimg?'/uploads/'+user.userimg:'/uploads/doubi.jpg'%>" alt="" style="width:150px">
 				<p><%= user.uname %></p>
 				<span style="margin-top:14px;color:#fff;"><%= user.qianming %></span>
 			</li>

@@ -25,6 +25,15 @@ var userSchema = new mongoose.Schema({
 		type: String,
 		// default: ''
 	},
+	useremail:{
+		type: String,
+		default:""
+	},
+	//上传头像字段;
+	userimg:{
+		type: String,
+		default:""
+	},
 	// 作品 相当于字段 
 	zuopin: {
 		// 数据类型
@@ -106,7 +115,7 @@ var userModel = mongoose.model('users', userSchema);
 // var user = {
 // 	uname: '王母',
 // 	shoujihao: 12000000000,
-// 	upwd: '123' 
+// 	upwd: '123'
 // }
 
 // // 插入一条数据
@@ -115,6 +124,6 @@ var userModel = mongoose.model('users', userSchema);
 // 	console.log(data);
 // })
 
-
+// console.log(user.userimg)
 // 将模型向外暴露
 module.exports = userModel;
